@@ -3,19 +3,33 @@ package pq2;
  * Author :  Vinni vinni_@yahoo.com
  */
 public class Lista {
-    public Nodo nodo;
+    public Nodo nodoPrincipal;
 
     /**
      * Adiciona un nodo al final de la lista
      * @param nodo Nodo
      */
     public void adicionarNodo(Nodo nodo){
+        if (nodo != null){
+            //si nodo tiene algo esta lleno sino no existe lista 
+            if (nodoPrincipal == null){
+                this.nodoPrincipal = nodo;
+            }else{
+                this.nodoPrincipal.siguienteNodo = nodo;
+            }
+           
+
+        }
 
     }
     /**
      * imprime toda la lista
      */
     public void imprimir(){
+        System.out.println(this.nodoPrincipal);
+        System.out.println(this.nodoPrincipal.siguienteNodo);
+        
+
 
     }
     /**
