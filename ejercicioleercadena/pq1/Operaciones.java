@@ -21,7 +21,10 @@ public class Operaciones {
         System.out.println("Listado de resultados ");
         for (int i = 0; i < contenido.length; i++) {
             for (int j = 0; j < COLUMNA; j++) {
-                System.out.print(this.contenido[i][j]+"\t");
+                if (this.contenido[i][j] == null)
+                    System.out.print("\t");
+                else
+                    System.out.print(this.contenido[i][j]+"\t");
             }
             System.out.println();
             
