@@ -22,7 +22,7 @@ public class Operaciones {
         for (int i = 0; i < contenido.length; i++) {
             for (int j = 0; j < COLUMNA; j++) {
                 if (this.contenido[i][j] == null)
-                    System.out.print("\t");
+                    System.out.print("[] \t");
                 else
                     System.out.print(this.contenido[i][j]+"\t");
             }
