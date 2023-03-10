@@ -1,7 +1,7 @@
-package pq1;
+package ejerciciolista.pq1;
 
-import pq2.Lista;
-import pq2.Nodo;
+import ejerciciolista.pq2.Lista;
+import ejerciciolista.pq2.Nodo;
 
 public class Principal{
     public static void main(String[] args) {

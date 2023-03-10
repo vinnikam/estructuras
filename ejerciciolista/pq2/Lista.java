@@ -1,4 +1,4 @@
-package pq2;
+package ejerciciolista.pq2;
 /**
  * Author :  Vinni vinni_@yahoo.com
  */
