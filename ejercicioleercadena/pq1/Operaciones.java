@@ -35,9 +35,7 @@ public class Operaciones {
                     this.contenido[i][j] = "["+(char)(ascii++)+"]";
                 else if (j == COLUMNA-1)
                     this.contenido[i][j] = "0";
-                else 
-                    this.contenido[i][j] = "[ ]";
-
+                
             }
         }
 
