@@ -15,7 +15,8 @@ public class Lista {
             if (nodoPrincipal == null){
                 this.nodoPrincipal = nodo;
             }else{
-                this.nodoPrincipal.siguienteNodo = nodo;
+                //this.nodoPrincipal.siguienteNodo = nodo;
+                
             }
            
 
@@ -26,10 +27,14 @@ public class Lista {
      * imprime toda la lista
      */
     public void imprimir(){
-        System.out.println(this.nodoPrincipal);
-        System.out.println(this.nodoPrincipal.siguienteNodo);
+        //System.out.println(this.nodoPrincipal);
+        //System.out.println(this.nodoPrincipal.siguienteNodo);
         
-
+        Nodo nodoaux = this.nodoPrincipal;
+        while(nodoaux != null){
+            System.out.println(nodoaux.informacion);
+            nodoaux = nodoaux.siguienteNodo;
+        }
 
     }
     /**

@@ -12,6 +12,8 @@ public class Principal{
         lista.adicionarNodo(nodo);
         Nodo nodo1 = new Nodo("Chelsea");
         lista.adicionarNodo(nodo1);
+        Nodo nodo2 = new Nodo("Liverpool");
+        lista.adicionarNodo(nodo2);
         lista.imprimir();
     }
 }
