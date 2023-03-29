@@ -5,17 +5,39 @@ package ejerciciolista.pq2;
 public class Lista {
     public Nodo nodoPrincipal;
 
-    /**
+        /**
      * Adiciona un nodo al final de la lista
      * @param nodo Nodo
      */
-    public void adicionarNodo(Nodo nodo){
+    public void adicionarNodoFin(Nodo nodo){
         if (nodo != null){
             //si nodo tiene algo esta lleno sino no existe lista 
             if (nodoPrincipal == null){
                 this.nodoPrincipal = nodo;
             }else{
-                this.nodoPrincipal.siguienteNodo = nodo;
+                Nodo aux = this.nodoPrincipal;
+                while(aux.siguienteNodo != null){
+                    aux = aux.siguienteNodo;
+                }
+                aux.siguienteNodo = nodo;
+            }
+           
+        }
+
+    }
+    /**
+     * Adiciona un nodo al inicio de la lista
+     * @param nodo Nodo
+     */
+    public void adicionarNodoInicio(Nodo nodo){
+        if (nodo != null){
+            //si nodo tiene algo esta lleno sino no existe lista 
+            if (nodoPrincipal == null){
+                this.nodoPrincipal = nodo;
+            }else{
+                Nodo aux = this.nodoPrincipal;
+                 nodo.siguienteNodo = aux;
+                 this.nodoPrincipal = nodo;
             }
            
 
@@ -26,8 +48,14 @@ public class Lista {
      * imprime toda la lista
      */
     public void imprimir(){
-        System.out.println(this.nodoPrincipal);
-        System.out.println(this.nodoPrincipal.siguienteNodo);
+        Nodo aux = this.nodoPrincipal;
+        while (aux != null){
+            System.out.println(aux.informacion);
+            aux = aux.siguienteNodo;
+
+        }
+        //System.out.println(this.nodoPrincipal);
+        //System.out.println(this.nodoPrincipal.siguienteNodo);
         
 
 
