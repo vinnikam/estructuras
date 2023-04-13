@@ -1,8 +1,8 @@
-package ejerciciolista.pq2;
+package ejerciciolista.pq3;
 /**
  * Author :  Vinni vinni_@yahoo.com
  */
-public class Lista {
+public class ListaDoble {
     public Nodo nodoPrincipal;
 
         /**
