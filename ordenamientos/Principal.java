@@ -11,7 +11,7 @@ public class Principal{
         Persona p = new Persona(25);
         gestor.adicionarPersona(p);
 
-        gestor.adicionarPersona(new Persona(15, "Elsa Patero"));
+        gestor.adicionarPersona(new Persona(5, "Elsa Patero"));
         gestor.adicionarPersona(new Persona(9, "Eldoc Torcito"));
         gestor.adicionarPersona(new Persona(45, "Elin Geniero"));
 

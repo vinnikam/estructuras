@@ -33,7 +33,7 @@ public class GestionOrdenamientos {
         int longitud = personasOrdenado.length;
         for (int i = 0; i < longitud - 1; i++)
             for (int j = 0; j < longitud - i - 1; j++)
-                if (personasOrdenado[j].identificacion > personasOrdenado[j + 1].identificacion) {
+                if (personasOrdenado[j].getIdentificacion() > personasOrdenado[j + 1].getIdentificacion()) {
                     // swap arr[j+1] and arr[j]
                     Persona temp = personasOrdenado[j];
                     personasOrdenado[j] = personasOrdenado[j + 1];

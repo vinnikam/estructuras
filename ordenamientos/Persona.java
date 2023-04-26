@@ -8,8 +8,8 @@ package ordenamientos;
  * 
  */
 public class Persona{
-    public long identificacion;
-    public String nombre;
+    private long identificacion;
+    private String nombre;
     public Persona(long identificacion){
         this.identificacion = identificacion;
         this.nombre = "NA";
@@ -24,4 +24,21 @@ public class Persona{
     public String toString() {
         return this.identificacion+" "+this.nombre;
     }
+
+    public long getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(long identificacion) {
+        this.identificacion = identificacion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
 }
