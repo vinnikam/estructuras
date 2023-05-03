@@ -11,7 +11,6 @@ public class Nodo {
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return "Anterior nodo -> "+ anteriorNodo + ": informacion : "+informacion+ " Siguiente nodo ->"+siguienteNodo;
     }
 }

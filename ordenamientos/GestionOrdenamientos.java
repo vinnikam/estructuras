@@ -79,7 +79,7 @@ public class GestionOrdenamientos {
             /* Move elements of arr[0..i-1], that are
                greater than key, to one position ahead
                of their current position */
-            while (j >= 0 && this.personasOrdenado[j].identificacion > key.identificacion) {
+            while (j >= 0 && this.personasOrdenado[j].getIdentificacion() > key.getIdentificacion()) {
                 this.personasOrdenado[j + 1] = this.personasOrdenado[j];
                 j = j - 1;
             }
