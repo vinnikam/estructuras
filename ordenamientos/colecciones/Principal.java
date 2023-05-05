@@ -1,4 +1,4 @@
-package ordenamientos.colecciones;
+
 import java.util.List;
 
 import ordenamientos.Persona;

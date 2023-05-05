@@ -7,11 +7,11 @@ public class Recursivos{
     public static void main(String[] args) {
         ejecutarPotentic();
         ejecutarMcd();
-        /*try {
+        try {
             ejecutarNumReves();
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
 
     }
     public static void ejecutarPotentic(){
@@ -26,7 +26,7 @@ public class Recursivos{
         n = in.nextInt();
         } while (n <= 0);
         System.out.println(x + " elevado a la " + n + " es igual a " + potencia(x, n));    
-        in.close();    
+        
     }
     public static double potencia(double x, double n) {
         if (n == 0) {
@@ -36,7 +36,7 @@ public class Recursivos{
         }
     }
     public static void ejecutarMcd(){
-        //18/24
+        // 18/24
         System.out.println(" MDC ");
         Scanner in = new Scanner(System.in);
         int x, y;
@@ -49,7 +49,6 @@ public class Recursivos{
         y = in.nextInt();
         } while (y <= 0);
         System.out.println("El mcd de " + x + " y " + y + " es : " + mcd(x, y));
-        in.close();    
 
     }
     public static int mcd(int a, int b) {
@@ -70,7 +69,6 @@ public class Recursivos{
         System.out.print("Numero al reves :");
         reves(num);
         System.out.println();
-        in.close();    
                 
     }
     public static void reves(int n) {
